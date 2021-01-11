@@ -16,9 +16,9 @@ because some code just show you the wrong way, like this:
 // {WillNotCompile}
 
 class Cat
-        extends ComparablePet implements Comparable<Cat> {
+        extends generics.ComparablePet implements Comparable<Cat> {
     // error: Comparable cannot be inherited with
-    // different arguments: <Cat> and <ComparablePet>
+    // different arguments: <Cat> and <generics.ComparablePet>
     // class Cat
     // ^
     // 1 error

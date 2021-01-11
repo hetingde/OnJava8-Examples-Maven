@@ -4,11 +4,14 @@
 // Visit http://OnJava8.com for more book information.
 package onjava;
 
+import java.util.Arrays;
+
 public interface ConvertTo {
     static boolean[] primitive(Boolean[] in) {
         boolean[] result = new boolean[in.length];
         for (int i = 0; i < in.length; i++)
-            result[i] = in[i]; // Autounboxing
+            // Autounboxing
+            result[i] = in[i];
         return result;
     }
 

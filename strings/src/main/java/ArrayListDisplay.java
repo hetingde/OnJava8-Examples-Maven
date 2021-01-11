@@ -3,8 +3,8 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 
-import coffee.Coffee;
-import coffee.CoffeeSupplier;
+import generics.coffee.Coffee;
+import generics.coffee.CoffeeSupplier;
 
 import java.util.List;
 import java.util.stream.Collectors;

@@ -12,7 +12,7 @@ class Dog:
     def speak(self):
        print("woof!")
 
-class Bob:
+class generics.Bob:
     def bow(self):
        print("thank you, thank you!")
     def speak(self):
@@ -23,7 +23,7 @@ class Bob:
 def command(pet):
     pet.speak()
 
-pets = [ Cat(), Dog(), Bob() ]
+pets = [ Cat(), Dog(), generics.Bob() ]
 
 for pet in pets:
     command(pet)

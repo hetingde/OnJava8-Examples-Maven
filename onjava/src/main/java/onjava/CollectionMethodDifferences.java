@@ -16,7 +16,7 @@ public class CollectionMethodDifferences {
                 .collect(Collectors.toCollection(TreeSet::new));
     }
 
-    static void interfaces(Class<?> type) {
+    static void                                                                                                                              interfaces(Class<?> type) {
         System.out.print("Interfaces in " +
                 type.getSimpleName() + ": ");
         System.out.println(

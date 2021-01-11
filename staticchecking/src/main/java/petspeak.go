@@ -11,14 +11,14 @@ func (this Cat) speak() { fmt.Printf("meow!\n")}
 type Dog struct {}
 func (this Dog) speak() { fmt.Printf("woof!\n")}
 
-type Bob struct {}
-func (this Bob) bow() {
+type generics.Bob struct {}
+func (this generics.Bob) bow() {
   fmt.Printf("thank you, thank you!\n")
 }
-func (this Bob) speak() {
+func (this generics.Bob) speak() {
   fmt.Printf("Welcome to the neighborhood!\n")
 }
-func (this Bob) drive() {
+func (this generics.Bob) drive() {
   fmt.Printf("beep, beep!\n")
 }
 
@@ -35,10 +35,10 @@ func command2(s interface { speak() }) { s.speak() }
 func main() {
   command(Cat{})
   command(Dog{})
-  command(Bob{})
+  command(generics.Bob{})
   command2(Cat{})
   command2(Dog{})
-  command2(Bob{})
+  command2(generics.Bob{})
 }
 
 /* Output:
